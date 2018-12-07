@@ -1,0 +1,33 @@
+{
+    "name": "lzning/faceplus",
+    "description": "face++ for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lzning",
+            "email": "254435828@qq.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "Zning\\FacePlus\\": "src"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Zning\\FacePlus\\Test\\": "tests"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zning\\FacePlus\\ServiceProvider"
+            ]
+        }
+    }
+}
