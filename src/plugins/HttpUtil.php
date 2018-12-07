@@ -58,8 +58,6 @@ class HttpUtil
             self::$_http_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
             if (self::$_http_code != 200)
             {
-                $msg = curl_error($curl);
-                $response = json_encode(array('ret' => -1, 'msg' => "{$msg}", 'http_code' => self::$_http_code));
                 break;
             }
         } while (0);
