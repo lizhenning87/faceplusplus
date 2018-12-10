@@ -1,7 +1,6 @@
 {
     "name": "lzning/faceplus",
     "description": "face++ for laravel",
-    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -9,7 +8,13 @@
             "email": "254435828@qq.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": "^7.0"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
 
     "autoload": {
         "psr-4": {
